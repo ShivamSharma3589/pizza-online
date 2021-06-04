@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+/* header section goes here */
+header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://www.w3schools.com/w3images/pizza.jpg') no-repeat center center/cover scroll;
+    color:white;
+    font-family: 'Caveat', cursive;
+    height: 100vh;
+}
+header h1{
+    text-align:center;
+    font-size:4.5rem;
+    padding: 2rem;
+}
+#title{
+    margin:3rem 0;
+}
+header p{
+    text-align:center;
+}
+header p a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 100;
+    font-size: 2.0rem;
+    border-radius: 5px;
+    background-color: black;
+}
+header p a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(117, 114, 114);
+}
+#openingHours{
+    margin:5rem 1rem;
+}
+#openingHours span{
+    background:black;
+    padding:.5rem;
+}
+/* navigation bar goes here */
+
+#navbar{
+    position:fixed;
+    background-color: rgba(0,0,0,0.4);
+    top: 0px;
+    width: 100vw;
+    padding: 15px 0;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Dancing Script', cursive;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+}
+#navbar a:hover{
+    background-color: rgba(255, 255, 255, 0.808);
+    color: rgba(0,0,0,0.7);
+}
+#navbar:hover{
+    background-color:black;
+}
+
+/* menu section goes here */
+
+h1{
+    color: white;
+    font-family: 'Caveat', cursive;
+    text-align:center;
+    font-size:4.5rem;
+    padding: 2rem;
+}
+
+#sec1{
+    /* border:1px solid white; */
+    padding:0.5rem;
+    color:white;
+    overflow:auto;
+}
+hr{
+    width: 75%;
+    margin:0.5rem auto;
+}
+#sec1 .box{
+    border:1px solid yellow;
+    width:32%;
+    margin:.61%;
+    float: left;
+    text-align: center;
+    padding:1rem;
+    background-color: white;
+    color: black;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    box-shadow: 0px 0px 6px whitesmoke;
+}
+.box h3 ,.box h4{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+.box p{
+    font-size: 2rem;
+}
+.box p,.box h4{
+    color:tomato;
+}
+
+/* about section goes here */
+
+#about{
+    background-color:#865858;
+    font-family: 'Caveat', cursive;
+    color: white;
+    padding: .5rem;
+    text-align: center;
+    overflow: auto;
+}
+#about p{
+    font-size: 1.8rem;
+}
+
+#about .para{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.row{
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgb(211, 159, 159);
+}
+#article {
+    float: left;
+    width: 49%;
+    padding: 0.5rem;
+}
+#aside{
+    width: 49%;
+    float: left;
+}
+#aside img{
+    width: 100%;
+    height: auto;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#schedule{
+    font-family:cursive;
+}
+#schedule div{
+    width: 49%;
+    float: left;
+    text-align: left;
+}
+#schedule div ul li{
+    list-style: none;
+    padding: 1.0rem;
+    font-size: 1.4rem;
+}
+
+/* map section goes here */
+
+#maps img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(70%);
+}
+
+/* contact section goes here */
+#contact{
+    background-color:rgb(137, 137, 177) ;
+    font-family :  cursive;
+    color: white;
+}
+#contact h3{
+    font-size: 2.9rem;
+    padding: 5rem;
+    text-align: center;
+}
+#contact p{
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+#contact p:nth-child(4){
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+#contact span{
+    background-color: black;
+    padding: 0.2rem;
+}
+input{
+    display: block;
+    width: 97%;height: 2rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+input ::placeholder{
+    opacity: 0.4;
+}
+/* submit button goes here */
+
+button{
+    border: none;
+    background-color: white;
+    width: 97%;
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 100;
+    line-height: 1.5rem;
+    margin: 2rem auto 5rem auto;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+
+/* footer section goes here */
+
+footer{
+    padding: 4rem;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 100;
+}
+footer a{
+    color: white;
+    /* text-decoration: none; */
+}
+footer p a{
+    text-decoration: none;
+}
+footer a:hover{
+    color: grey;
+}
+
+/* here goes for mobiles and tablets */
+@media (max-width:600px){
+    html{
+        font-size:8px;
+    }
+    #openingHours{
+        display:none;
+    }
+    #article,#aside{
+        width: 100%;
+    }
+    #article{
+        padding: 4rem;
+    }
+    #sec1 .box{
+        width:100%;
+        margin: 10px auto;
+        background-color: white;
+        color:black;
+    }
+    footer h3,p{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:900px){
+    html{
+        font-size: 12px;
+    }
+}
