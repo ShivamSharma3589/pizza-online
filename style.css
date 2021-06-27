@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
 }
 body{
     background-color: #000;
@@ -51,7 +52,8 @@ header p a:hover{
     background-color: rgba(0,0,0,0.4);
     top: 0px;
     width: 100vw;
-    padding: 15px 0;
+    z-index: 10;
+    padding: 10px 0;
 }
 #navbar ul{
     display: flex;
@@ -59,9 +61,9 @@ header p a:hover{
 }
 #navbar a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Dancing Script', cursive;
-    padding: 15px 20px;
+    color: rgba(255, 255, 255, 0.802);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
     font-size: 1.5rem;
 }
 #navbar a:hover{
@@ -83,10 +85,10 @@ h1{
 }
 
 #sec1{
-    /* border:1px solid white; */
     padding:0.5rem;
     color:white;
-    overflow:auto;
+    display: flex;
+    justify-content: space-around;
 }
 hr{
     width: 75%;
@@ -96,7 +98,6 @@ hr{
     border:1px solid yellow;
     width:32%;
     margin:.61%;
-    float: left;
     text-align: center;
     padding:1rem;
     background-color: white;
@@ -106,7 +107,7 @@ hr{
     box-shadow: 0px 0px 6px whitesmoke;
 }
 .box h3 ,.box h4{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 2rem 0;
 }
 .box p{
@@ -237,11 +238,11 @@ button:hover{
 /* footer section goes here */
 
 footer{
-    padding: 4rem;
+    padding: 1rem;
     color: white;
     text-align: center;
-    font-family: cursive;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     font-weight: 100;
 }
 footer a{
@@ -256,9 +257,9 @@ footer a:hover{
 }
 
 /* here goes for mobiles and tablets */
-@media (max-width:600px){
+@media (max-width:770px){
     html{
-        font-size:8px;
+        font-size:10px;
     }
     #openingHours{
         display:none;
@@ -266,8 +267,8 @@ footer a:hover{
     #article,#aside{
         width: 100%;
     }
-    #article{
-        padding: 4rem;
+    #sec1{
+        flex-direction: column;
     }
     #sec1 .box{
         width:100%;
@@ -279,8 +280,8 @@ footer a:hover{
         font-size: 1.2rem;
     }
 }
-@media (max-width:900px){
-    html{
-        font-size: 12px;
+@media (max-width:325px){
+    #navbar a{
+        font-size: 1rem;
     }
 }
